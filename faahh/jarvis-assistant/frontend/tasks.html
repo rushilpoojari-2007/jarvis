@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="theme-color" content="#fff7ed" /><title>JARVIS · Tasks</title><link rel="stylesheet" href="/static/css/style.css?v=orange-white-2" /></head>
+  <body><div class="app-shell">
+    <aside class="sidebar"><a class="brand" href="/" aria-label="JARVIS overview"><span class="brand-mark">J</span><span>JARVIS<small>PERSONAL AI</small></span></a><nav aria-label="Main navigation">
+      <a class="nav-link" data-page="dashboard" href="/">Overview</a><a class="nav-link" data-page="news" href="/news">News</a><a class="nav-link" data-page="briefing" href="/briefing">Briefing</a><a class="nav-link" data-page="tasks" href="/tasks">Tasks</a><a class="nav-link" data-page="weather" href="/weather">Weather</a><a class="nav-link" data-page="chat" href="/chat">AI Chat</a>
+    </nav><div class="sidebar-footer"><span class="status-dot"></span> Assistant ready</div></aside>
+    <main class="content"><header class="topbar"><div><span class="eyebrow">STAY ON TRACK</span><h1 id="greeting">Good day</h1><p id="live-date" class="muted">Connecting to JARVIS...</p></div><div class="live-indicator"><span class="status-dot"></span> Systems online <time id="live-clock"></time></div></header>
+      <section class="page-card"><div class="section-heading"><div><span class="eyebrow">YOUR PRIORITIES</span><h2>Tasks</h2></div><span id="task-total" class="count-pill">Loading tasks</span></div>
+        <form id="task-form" class="task-form"><input id="task-title" placeholder="What needs to get done?" required /><textarea id="task-description" placeholder="Add a note (optional)"></textarea><div class="task-form-actions"><select id="task-priority" aria-label="Priority"><option value="low">Low priority</option><option value="medium" selected>Medium priority</option><option value="high">High priority</option></select><button type="submit">Add task</button></div></form>
+        <div id="task-list" class="list" aria-live="polite"></div>
+      </section>
+    </main>
+  </div><script src="/static/js/api.js?v=pages-2"></script><script src="/static/js/app.js?v=agent-tools-1"></script></body>
+</html>

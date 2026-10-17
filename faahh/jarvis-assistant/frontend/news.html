@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="theme-color" content="#fff7ed" />
+    <title>JARVIS · News</title><link rel="stylesheet" href="/static/css/style.css?v=orange-white-3" />
+  </head>
+  <body><div class="app-shell">
+    <aside class="sidebar"><a class="brand" href="/" aria-label="JARVIS overview"><span class="brand-mark">J</span><span>JARVIS<small>PERSONAL AI</small></span></a><nav aria-label="Main navigation">
+      <a class="nav-link" data-page="dashboard" href="/">Overview</a><a class="nav-link" data-page="news" href="/news">News</a><a class="nav-link" data-page="briefing" href="/briefing">Briefing</a><a class="nav-link" data-page="tasks" href="/tasks">Tasks</a><a class="nav-link" data-page="weather" href="/weather">Weather</a><a class="nav-link" data-page="chat" href="/chat">AI Chat</a>
+    </nav><div class="sidebar-footer"><span class="status-dot"></span> Assistant ready</div></aside>
+    <main class="content"><header class="topbar"><div><span class="eyebrow">LIVE INTELLIGENCE</span><h1 id="greeting">Good day</h1><p id="live-date" class="muted">Connecting to JARVIS...</p></div><div class="live-indicator"><span class="status-dot"></span> Systems online <time id="live-clock"></time></div></header>
+      <section class="page-card"><div class="section-heading"><div><span class="eyebrow">CURATED FOR YOU</span><h2>News</h2></div><span id="news-updated" class="muted" aria-live="polite">Waiting for headlines</span></div>
+        <div class="toolbar"><select id="news-country" aria-label="News region"><option value="in" selected>India</option><option value="us">United States</option><option value="gb">United Kingdom</option></select><select id="news-category" aria-label="News category"><option value="general">Top stories</option><option value="business">Business</option><option value="technology">Technology</option><option value="science">Science</option><option value="health">Health</option><option value="entertainment">Entertainment</option><option value="sports">Sports</option></select><input id="news-query" placeholder="Search any topic" aria-label="Search news topics" /><button id="load-news">Refresh</button></div>
+        <div id="news-list" class="list" aria-live="polite"></div>
+      </section>
+    </main>
+  </div><script src="/static/js/api.js?v=pages-3"></script><script src="/static/js/app.js?v=agent-tools-1"></script></body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="theme-color" content="#fff7ed" /><title>JARVIS - AI Chat</title><link rel="stylesheet" href="/static/css/style.css?v=orange-white-chat-3" /></head>
+  <body><div class="app-shell">
+    <aside class="sidebar"><a class="brand" href="/" aria-label="JARVIS overview"><span class="brand-mark">J</span><span>JARVIS<small>PERSONAL AI</small></span></a><nav aria-label="Main navigation">
+      <a class="nav-link" data-page="dashboard" href="/">Overview</a><a class="nav-link" data-page="news" href="/news">News</a><a class="nav-link" data-page="briefing" href="/briefing">Briefing</a><a class="nav-link" data-page="tasks" href="/tasks">Tasks</a><a class="nav-link" data-page="weather" href="/weather">Weather</a><a class="nav-link" data-page="chat" href="/chat">AI Chat</a>
+    </nav><div class="sidebar-footer"><span class="status-dot"></span> Assistant ready</div></aside>
+    <main class="content"><header class="topbar"><div><span class="eyebrow">YOUR AI ASSISTANT</span><h1 id="greeting">Good day</h1><p id="live-date" class="muted">Connecting to JARVIS...</p></div><div class="live-indicator"><span class="status-dot"></span> Systems online <time id="live-clock"></time></div></header>
+      <section class="page-card chat-page"><div class="section-heading"><div><span class="eyebrow">HOW CAN I HELP?</span><h2>Chat with JARVIS</h2></div><div class="chat-session-controls"><label for="conversation-select">Your chats</label><select id="conversation-select" aria-label="Choose a conversation"><option>Loading chats...</option></select><button id="new-chat" class="button-secondary" type="button">+ New chat</button></div></div>
+        <p id="chat-provider-status" class="muted" role="status" aria-live="polite">Checking AI configuration...</p>
+        <div id="chat-log" class="chat-log" aria-live="polite"><div class="chat-message assistant"><strong>JARVIS</strong><p>At your service, sir.</p></div></div>
+        <div class="chat-voice-controls">
+          <label class="voice-option" for="speak-replies"><input id="speak-replies" type="checkbox" checked /><span>Speak replies</span></label>
+          <label class="voice-option voice-language-option" for="voice-language"><span>Voice language</span>
+            <select id="voice-language" aria-label="Voice language"><option value="en-IN" selected>English (India)</option><option value="hi-IN">Hindi</option><option value="kn-IN">Kannada</option></select>
+          </label>
+          <button id="stop-speaking" type="button" class="button-secondary" disabled>Stop speaking</button>
+          <span id="voice-status" class="voice-status" role="status" aria-live="polite">Voice ready.</span>
+        </div>
+        <p class="voice-disclosure">Microphone recognition may use your browser's speech service. You can always type instead.</p>
+        <div id="chat-attachment-preview" class="chat-attachment-preview" hidden><img id="chat-attachment-thumbnail" alt="Selected image preview" /><span id="chat-attachment-name"></span><button id="remove-chat-image" class="button-secondary" type="button" aria-label="Remove attached image">Remove</button></div>
+        <div class="toolbar chat-toolbar"><input id="chat-image-input" type="file" accept="image/png,image/jpeg,image/webp" hidden /><button id="attach-chat-image" class="button-secondary attach-image-button" type="button" aria-label="Attach an image" title="Attach an image">+</button><input id="chat-input" maxlength="12000" placeholder="Ask JARVIS or tap Speak..." aria-label="Message JARVIS" /><button id="voice-input" class="button-secondary voice-button" type="button" aria-label="Speak to JARVIS" aria-pressed="false">Speak</button><button id="send-chat" type="button">Send</button></div>
+      </section>
+    </main>
+  </div><script src="/static/js/api.js?v=pages-2"></script><script src="/static/js/app.js?v=chat-6"></script></body>
+</html>
